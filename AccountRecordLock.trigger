@@ -1,3 +1,5 @@
+
+
 trigger AccountRecordLock on Account (after update, after insert) {
   for (Account a : Trigger.New) {
     if (a.Rating == 'Cold') {
